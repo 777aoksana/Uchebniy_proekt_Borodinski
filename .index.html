@@ -3,64 +3,141 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: учебный проект Барбершоп, разработанный Арефьевой О.</title>
+    <title>HTML Academy: учебный проект Барбершоп «Бородинский», разработанный Арефьевой О.</title>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
     <base href="https://up.htmlacademy.ru/profession/frontender/18/htmlcss/38/project/barbershop/1">
 </head>
   <body>
-    <header class="main-header">
-      <!-- Шапка сайта -->
-      <h1>Барбершоп</h1>
-      <nav>
-        <ul class="user-menu">
-          <li>
-            <a href="#">О нас</a>
+    <header class="page-header">
+    <!-- Шапка сайта -->
+      <h1>Барбершоп «Бородинский»</h1>
+      <nav class="navigation">
+        <!-- Навигация-меню -->
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О нас</a>
           </li>
-          <li>
-            <a href="#">Каталог</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
-          <li>
-            <a href="#">Частные вопросы</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="faq.html">Частые вопросы</a>
           </li>
-          <li>
-            <a href="#" img="/Borodinski/img/menyu/search.png">Иконка "Поиск"</a>
+        </ul>
+        <ul class="navigation-list" class="navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
-          <li>
-            <a href="#" img="/Borodinski/img/menyu/pokoj.png">Иконка "Покой"</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span></a>
           </li>
-          <li>
-            <a href="#" img="/Borodinski/img/menyu/vxod.png">Иконка "Вход"</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Вход</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <!-- Основное содержимое страницы -->
-      <h1></h1>
-      <img src="/Borodinski/img/Borodinski_logo.png" width="367px" height="152px" top="134px" left="326px" alt="Логотип компании">
+    <main class="main-index">
+    <!-- Основное содержимое страницы -->
+      <h1><span class="visually-hidden">Главная страница Барбершопа «Бородинский»</span></h1>
+      <img class="logo" src="/Borodinski_logo.png" alt="Логотип Барбершопа «Бородинский».">
+
+      <section class="advantages">
+        <h2><span class="visually-hidden">Преимущества Барбершопа «Бородинский»</span></h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-titul">Быстро</h3>
+            <p class="advantages-description">Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы — счастливый обладатель стильной стрижки-минутки!</p>
+            <a class="advantages-link" href="#"></a>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-titul">Круто</h3>
+            <p class="advantages-description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+            <a class="advantages-link" href="#"></a>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-titul">Дорого</h3>
+            <p class="advantages-description">Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не даёт определённый статус?</p>
+            <a class="advantages-link" href="#"></a>
+          </li>
+        </ul>
+      </section>
+
       <section class="services">
-        <h2></h2>
-        …
+        <h2><span class="services-titul">Популярные услуги Барбершопа «Бородинский»</span></h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <span class="services-name">Стрижка машинкой</span>
+            <b class="services-price">800</b>
+          </li>
+        </ul>
+        <ul class="services-list">
+          <li class="services-item">
+            <span class="services-name">Стрижка усов</span>
+            <b class="services-price">1200</b>
+          </li>
+        </ul>
+        <ul class="services-list">
+          <li class="services-item">
+            <span class="services-name">Груминг</span>
+            <b class="services-price">400</b>
+          </li>
+        </ul>
+        <ul class="services-list">
+          <li class="services-item">
+            <span class="services-name">Комплексная стрижка</span>
+            <b class="services-price">2300</b>
+          </li>
+        </ul>
+        <a class="button button-all" href="#">Посмотреть все</a>
       </section>
-      <section class="about">
-        <h2></h2>
-        …
-      </section>
-      <section class="companies">
-        <h2></h2>
-        …
-      </section>
-      <article>
 
-      </article>
-      <aside>
+      <section class="gallery">
+        <h2 class="gallery-title">Фотогалерея</h2>
+        <img class="slider-image" src="" alt="Примеры работ.">
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">4 фото</span>
+            </button>
+          </li>
+        </ol>
+      </section>
 
-      </aside>
+      <section class="contacts">
+        <h2>Барбершоп «Бородинский»</h2>
+
+
+      </section>
+        
+
+
     </main>
 
     <footer class="main-footer">
-      <!-- Подвал сайта -->
+    <!-- Подвал сайта -->
 
     </footer>
   </body>
