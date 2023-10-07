@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: учебный проект Барбершоп «Бородинский», разработанный Арефьевой О.</title>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-    <base href="https://up.htmlacademy.ru/profession/frontender/18/htmlcss/38/project/barbershop/1">
-</head>
+    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>    
+    <link rel="stylesheet" href="style.css">
+  </head>  
   <body>
     <header class="page-header">
     <!-- Шапка сайта -->
-      <h1>Барбершоп «Бородинский»</h1>
       <nav class="navigation">
         <!-- Навигация-меню -->
         <ul class="navigation-list">
@@ -24,15 +23,17 @@
             <a class="navigation-link" href="faq.html">Частые вопросы</a>
           </li>
         </ul>
-        <ul class="navigation-list" class="navigation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+            <a class="navigation-link" href="images/icon" src="search.svg" alt="Иконка - лупа"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Корзина</span></a>
+            <a class="navigation-link" href="images/icon" src="cart.png" alt="Иконка - корзина"><span class="visually-hidden">Корзина</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход</a>
+            <a class="navigation-link navigation-icon" href="images/icon" src="login.svg" alt="Иконка - вход">Вход</a>
+            <button class="button" type="button" href="#">Вход</button>
+            <!-- Вход в модальное окно -->
           </li>
         </ul>
       </nav>
@@ -40,57 +41,58 @@
 
     <main class="main-index">
     <!-- Основное содержимое страницы -->
-      <h1><span class="visually-hidden">Главная страница Барбершопа «Бородинский»</span></h1>
-      <img class="logo" src="/Borodinski_logo.png" alt="Логотип Барбершопа «Бородинский».">
+      <h1 class="visually-hidden">Главная страница Барбершопа «Бородинский»</h1>
+      <img class="logo" src="logo-full-dark.png" alt="Большой логотип Барбершопа «Бородинский»." href="images/logo">
 
       <section class="advantages">
-        <h2><span class="visually-hidden">Преимущества Барбершопа «Бородинский»</span></h2>
+        <!-- Меню преимуществ -->
+        <h2 class="visually-hidden">Преимущества Барбершопа «Бородинский»</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-titul">Быстро</h3>
+            <img class="advantages-icon" src="bullet.svg" alt="Иконка - ромб" href="images/icon">
             <p class="advantages-description">Мы делаем свою работу быстро! Два часа пролетят незаметно, и вы — счастливый обладатель стильной стрижки-минутки!</p>
-            <a class="advantages-link" href="#"></a>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-titul">Круто</h3>
+            <img class="advantages-icon" src="bullet.svg" alt="Иконка - ромб" href="images/icon">
             <p class="advantages-description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-            <a class="advantages-link" href="#"></a>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-titul">Дорого</h3>
+            <img class="advantages-icon" src="bullet.svg" alt="Иконка - ромб" href="images/icon">
             <p class="advantages-description">Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не даёт определённый статус?</p>
-            <a class="advantages-link" href="#"></a>
           </li>
         </ul>
       </section>
-
+    
       <section class="services">
-        <h2><span class="services-titul">Популярные услуги Барбершопа «Бородинский»</span></h2>
+        <h2><span class="services-titul">Популярные услуги</span></h2>
         <ul class="services-list">
           <li class="services-item">
             <span class="services-name">Стрижка машинкой</span>
-            <b class="services-price">800</b>
+            <b class="services-price">800 ₽</b>
           </li>
         </ul>
         <ul class="services-list">
           <li class="services-item">
             <span class="services-name">Стрижка усов</span>
-            <b class="services-price">1200</b>
+            <b class="services-price">1200 ₽</b>
           </li>
         </ul>
         <ul class="services-list">
           <li class="services-item">
             <span class="services-name">Груминг</span>
-            <b class="services-price">400</b>
+            <b class="services-price">400 ₽</b>
           </li>
         </ul>
         <ul class="services-list">
           <li class="services-item">
             <span class="services-name">Комплексная стрижка</span>
-            <b class="services-price">2300</b>
+            <b class="services-price">2300 ₽</b>
           </li>
         </ul>
-        <a class="button button-all" href="#">Посмотреть все</a>
+        <a class="button button-all" href="catalog.html">Посмотреть все</a>
       </section>
 
       <section class="gallery">
@@ -136,7 +138,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button" href="№">Как проехать</a>
+        <a class="button" class="button" type="submit">Как проехать</a>
         <a class="button button-feedback" href="https://www.google.com/maps/place/%D0%BD%D0%B0%D0%B1.+P%D0%B5%D0%BA%D0%B8+%D0%9A%D0%B0%D1%80%D0%BF%D0%BE%D0%B2%D0%BA%D0%B8,+5+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81+%D0%9F,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+197022/@59.9683447,30.3151923,17z/data=!3m1!4b1!4m5!3m4!1s0x4696315bc4e8ce61:0x74d4f0cbfe1fd995!8m2!3d59.968342!4d30.317381">Обратная связь</a>
       </section>
 
@@ -169,7 +171,7 @@
     <!-- Подвал сайта -->
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <img class="footer-contacts-logo" src="" alt="Логотип Барбершоп «Бородинский».">
+        <img class="footer-contacts-logo" src="images/Borodinski_logo.png" alt="Логотип Барбершоп «Бородинский».">
         <adress class="footer-contacts-adress">
           <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a class="footer-contacts-adress-phone" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -202,7 +204,7 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="№">
+            <a class="button" href="#">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
